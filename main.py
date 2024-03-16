@@ -153,7 +153,7 @@ class enemyAI(pygame.sprite.Sprite):
             dx, dy = 0, 0
 
         # Set enemy speed
-        enemy_speed = 4.5
+        enemy_speed = 5
 
         # Move towards the player
         self.velocity_x = dx * enemy_speed
@@ -205,7 +205,7 @@ font_copyright = pygame.font.Font("fonts/StalinistOne-Regular.ttf", 10)
 font_owner = pygame.font.Font(None, 30)
 play_text = menu_font.render("Play", True, (255, 255, 255))
 play_rect = play_text.get_rect(center=(screen_width // 2, screen_height // 2))
-title_text = menu_font.render("REAPER RAVAGE", True, (255, 0, 0))
+title_text = menu_font.render("REAPER RAVAGE", True, (255, 255, 255))
 title_rect = play_text.get_rect(center=(350, screen_height // 7))
 menu_background = pygame.image.load("images/Game_Menu.png")
 menu_background = pygame.transform.scale(menu_background, (screen_width, screen_height))
